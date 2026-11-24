@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Café, brunch e sabores de Nova York na Alameda Rio Negro, em Alphaville. Conheça o cardápio e planeje sua visita.">
+<meta name="theme-color" content="#211811">
+<title>The New York Coffee · Alphaville</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#principal">Ir para o conteúdo</a>
+<header class="header">
+  <a class="wordmark" href="#inicio" aria-label="The New York Coffee, início"><span>THE NEW YORK</span><strong>COFFEE</strong></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Navegação principal">
+    <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#cardapio">Cardápio</a><a href="#avaliacoes">Avaliações</a>
+  </nav>
+  <a class="visit-link" href="#visite">Como chegar</a>
+</header>
+<main id="principal">
+<section id="inicio" class="hero" aria-labelledby="hero-title">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow"><i></i> ALPHAVILLE · BARUERI</p>
+      <h1 id="hero-title">It’s always<br><em>coffee time.</em></h1>
+      <p class="hero-lead">Um pedaço de Nova York em Alphaville.<br>Café, brunch e boas conversas.</p>
+      <a href="#cardapio" class="pill dark">Explorar cardápio</a>
+    </div>
+    <div class="hero-art">
+      <div class="scene" aria-hidden="true">
+        <div class="halo"></div>
+        <div class="bean b1"></div><div class="bean b2"></div><div class="bean b3"></div><div class="bean b4"></div><div class="bean b5"></div>
+        <div class="cup">
+          <div class="lid"></div><svg class="pour" viewBox="0 0 164 280" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="espresso-stream"><stop stop-color="#381809"/><stop offset=".34" stop-color="#a75b2a"/><stop offset=".50" stop-color="#e4a55c"/><stop offset=".65" stop-color="#8b421b"/><stop offset="1" stop-color="#38170b"/></linearGradient>
+              </defs>
+              <path d="M151 -8 C125 35 61 77 41 132 C21 186 22 230 24 280 L13 280 C12 221 14 178 31 129 C51 70 102 28 116 -8 Z" fill="url(#espresso-stream)"/>
+              <path class="stream-glint" d="M135 -7 C102 41 58 71 36 131 S18 231 19 278" fill="none" stroke="#ffbd74" stroke-width="2.2" stroke-dasharray="12 22"/>
+            </svg>
+          <div class="cup-body"><div class="cup-print"></div><img src="assets/logo.png" alt=""></div>
+          <div class="coffee"><i class="impact"></i></div><div class="rim"></div>
+        </div>
+        <div class="cup-shadow"></div>
+      </div>
+      <button type="button" class="replay" aria-label="Repetir animação do café" title="Repetir animação">↻</button>
+      <button type="button" class="motion-toggle" aria-pressed="false">Pausar animação</button>
+    </div>
+  </div>
+</section>
+<section id="cardapio" class="menu section">
+  <div class="section-head">
+    <div><p class="eyebrow">CAFÉ, BRUNCH E MAIS</p><h2>Do primeiro gole<br><em>à última mordida.</em></h2></div>
+    <a class="pill outline" href="https://drive.google.com/file/d/1fhsuRqQma69teIk7INm6QHVHqAtIyjtz/view?usp=sharing" target="_blank" rel="noopener">Cardápio oficial no Drive</a>
+  </div>
+  <div class="filters" role="group" aria-label="Categorias do cardápio">
+    <button data-category="todos" aria-pressed="true">Destaques</button><button data-category="cafes" aria-pressed="false">Cafés e bebidas</button><button data-category="brunch" aria-pressed="false">Brunch e salgados</button><button data-category="doces" aria-pressed="false">Doces</button>
+  </div>
+  <p id="menu-status" class="sr-only" role="status"></p>
+  <div id="menu-grid" class="menu-grid"></div>
+  <noscript><p><a href="assets/cardapio.pdf">Abrir o cardápio completo em PDF</a></p></noscript>
+  <details class="original-menu">
+    <summary>Ver as páginas do cardápio</summary>
+    <p>Selecione uma página para ampliar ou <a href="assets/cardapio.pdf" target="_blank" rel="noopener">abra o PDF completo</a>.</p>
+    <div class="menu-pages">
+      <button data-page="1"><img src="assets/cardapio-1.jpg" alt="Ampliar página de cafés, bebidas e doces" loading="lazy"></button>
+      <button data-page="2"><img src="assets/cardapio-2.jpg" alt="Ampliar página de brunch, pães e salgados" loading="lazy"></button>
+    </div>
+  </details>
+</section>
+<section id="sobre" class="about">
+  <img class="about-photo" src="assets/salao-1536.webp" width="1536" height="1024" alt="Interior da cafeteria na unidade Alphaville" loading="lazy">
+  <div class="about-copy">
+    <p class="eyebrow">SOBRE A CAFETERIA</p>
+    <h2>Nova York,<br><em>bem aqui.</em></h2>
+    <p>A inspiração nova-iorquina está na arquitetura e no cardápio. Na unidade Rio Negro, você pode passar para um espresso, combinar um brunch com amigos ou fazer uma pausa para um café com bolo.</p>
+    <a href="https://instagram.com/thenewyorkcoffee" class="pill outline" target="_blank" rel="noopener">Confira no Instagram</a>
+  </div>
+</section>
+<section id="avaliacoes" class="reviews section">
+  <div class="section-head">
+    <div><p class="eyebrow">AVALIAÇÕES</p><h2>Quem já tomou<br><em>um café por aqui.</em></h2></div>
+    <a class="rating" href="https://restaurantguru.com/The-New-York-Coffee-Barueri/reviews/google" target="_blank" rel="noopener"><span aria-hidden="true">★</span> <strong>4,6/5</strong><small>Google · ver avaliações</small></a>
+  </div>
+  <div class="review-carousel" aria-label="Depoimentos de clientes">
+    <div class="review-cards" id="review-cards" aria-live="polite">
+      <figure class="review"><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><blockquote>“Tomamos um café maravilhoso com alguns acompanhamentos e foi uma experiência muito boa.”</blockquote><figcaption>Felipe Araujo</figcaption></figure>
+      <figure class="review" hidden><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><blockquote>“Sempre um ótimo atendimento exemplar.”</blockquote><figcaption><a href="https://restaurantguru.com/link/a1:44659410:rw26740456" target="_blank" rel="noopener">Kauê Vaz · Google</a></figcaption></figure>
+      <figure class="review" hidden><span class="stars" aria-label="5 de 5 estrelas">★★★★★</span><blockquote>5/5 em comida, atendimento e ambiente.</blockquote><figcaption><a href="https://restaurantguru.com/link/a1:44659410:rw26740454" target="_blank" rel="noopener">Rayane Moraes · Google</a></figcaption></figure>
+    </div>
+    <div class="review-controls">
+      <button data-review-step="-1" aria-label="Avaliação anterior">‹</button>
+      <div class="review-position" aria-hidden="true">1 / 3</div>
+      <button data-review-step="1" aria-label="Próxima avaliação">›</button>
+    </div>
+  </div>
+</section>
+<section id="visite" class="visit section">
+  <div><p class="eyebrow">UNIDADE RIO NEGRO</p><h2>Seu próximo<br><em>café é aqui.</em></h2></div>
+  <div class="visit-info">
+    <dl><dt>Endereço</dt><dd>Alameda Rio Negro, 1030<br>Alphaville, Barueri – SP</dd><dt>Horário</dt><dd>Todos os dias, das 8h às 20h</dd><dt>Estacionamento</dt><dd>Vagas gratuitas em frente à cafeteria, sujeitas à disponibilidade.</dd></dl>
+    <a class="pill light" href="https://www.google.com/maps/dir/?api=1&amp;destination=The%20New%20York%20Coffee%20Alphaville%2C%20Alameda%20Rio%20Negro%201030%2C%20Barueri" target="_blank" rel="noopener">Traçar rota no Google Maps</a>
+    <a class="phone" href="tel:+551141956222">(11) 4195-6222</a>
+  </div>
+</section>
+</main>
+<footer><a class="wordmark" href="#inicio"><span>THE NEW YORK</span><strong>COFFEE</strong></a><a href="https://instagram.com/thenewyorkcoffee" target="_blank" rel="noopener">@thenewyorkcoffee</a></footer>
+<dialog id="menu-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title">Cardápio</h2><form method="dialog"><button class="pill outline">Fechar</button></form></div><img alt="" id="full-menu"></dialog>
+</body>
+</html>
