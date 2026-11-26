@@ -69,7 +69,7 @@
 
 @media(prefers-reduced-motion:reduce){.motion-toggle{display:none}}
 .menu-card img {aspect-ratio:4/3;}
-.menu-card img[src*="avocado"], .menu-card img[src*="breakfast"], .menu-card img[src*="cafe.webp"] { aspect-ratio:1; }
+.menu-card img[src*="avocado"], .menu-card img[src*="breakfast"], .menu-card img[src*="cafe.webp"], .menu-card img[src$="croissant.webp"] { aspect-ratio:1; }
 @media(max-width:560px){.menu-grid{grid-template-columns:1fr}}
 
 .header .wordmark img {height:62px; width:auto;filter:brightness(0) invert(1);}
